@@ -102,6 +102,6 @@ function updateCartTotal() {
     var quantity = quantityElement.value;//Input By quantityElements Value//
     total = total + (price * quantity);//Total Price//
   }
-  total = Math.round(total);
+ total = Math.round(total * 100) / 100;
   document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total;//Storing This Output In cart-price-total Class//
 }
